@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Relawan</title>
+</head>
+<body>
+    <header>
+        <h1>Formulir Pendaftaran Relawan Pelepasan Tukik</h1>
+        <p>Isi data dengan benar untuk contoh pendaftaran kegiatan konservasi.</p>
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="konservasi.html">Data Konservasi</a></li>
+                <li><a href="pendaftaran.html">Daftar Relawan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Data Relawan</h2>
+            <p>
+                Formulir ini merupakan simulasi HTML untuk praktikum. Data yang diisi tidak dikirim ke server
+                karena website ini hanya menggunakan HTML statis.
+            </p>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="nama">Nama lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Alamat email:</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <fieldset>
+                    <legend>Pilih sesi kegiatan:</legend>
+                    <input type="radio" id="sesi-pagi" name="sesi" value="pagi" required>
+                    <label for="sesi-pagi">Pagi (06.00 WIB)</label><br>
+
+                    <input type="radio" id="sesi-sore" name="sesi" value="sore">
+                    <label for="sesi-sore">Sore (16.30 WIB)</label>
+                </fieldset>
+
+                <p>
+                    <label for="tanggal">Tanggal rencana kunjungan:</label><br>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </p>
+
+                <p>
+                    <label for="alasan">Alasan ingin menjadi relawan (opsional):</label><br>
+                    <textarea id="alasan" name="alasan" rows="4" cols="40"
+                              placeholder="Tuliskan alasan singkat Anda."></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="aturan" name="aturan" value="setuju" required>
+                    <label for="aturan">Saya bersedia mengikuti arahan petugas dan menjaga habitat penyu.</label>
+                </p>
+
+                <button type="submit">Kirim Pendaftaran</button>
+                <button type="reset">Kosongkan Formulir</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Sebelum Mengikuti Kegiatan</h2>
+            <h3>Hal yang perlu diingat</h3>
+            <ul>
+                <li>Gunakan pakaian dan alas kaki yang sesuai dengan kondisi pantai.</li>
+                <li>Jangan menyentuh penyu atau tukik tanpa arahan petugas.</li>
+                <li>Jadwal pelepasan bergantung pada kondisi alam dan keputusan tim konservasi.</li>
+            </ul>
+            <p>Untuk mempelajari latar belakang kegiatan, kunjungi kembali <a href="index.html">halaman beranda</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ekowisata Konservasi Penyu Pantai Karang Terpencil.</p>
+        <p>Formulir ini hanya demonstrasi; belum terhubung dengan sistem penyimpanan data.</p>
+    </footer>
+</body>
+</html>
